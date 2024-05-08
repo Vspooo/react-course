@@ -3,7 +3,7 @@ import UsersComponent from "./components/users-component";
 import PostsComponent from "./components/posts-component";
 
 const App = () => {
-    const [userId, setUserId] = useState<number>(0)
+    const [userId, setUserId] = useState<number|null>(null)
     let choseUser = (id:number)=>{
         setUserId(id)
     }

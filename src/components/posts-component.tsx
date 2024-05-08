@@ -22,7 +22,7 @@ const PostsComponent:FC<IProps> = ({userId}) => {
         <div>
             {
                 post
-                    .map(post=> <div>{post.id}.{post.title}</div>)
+                    .map(post=> <div key={post.id}>{post.id}.{post.title}</div>)
             }
         </div>
     );
