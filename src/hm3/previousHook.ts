@@ -2,9 +2,9 @@
 
 import {useRef} from "react";
 
-const usePrevious = (value:any) =>{
-    const currentValue =  useRef(value)
-    const previousValue = useRef()
+const usePrevious = <T, >(value:T): T|undefined =>{
+    const currentValue =  useRef<T>(value)
+    const previousValue = useRef<T|undefined>()
     if (currentValue.current !== value){
         previousValue.current = currentValue.current
     }
