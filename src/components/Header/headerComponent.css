@@ -1,0 +1,24 @@
+.header{
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4vw;
+}
+
+.header a {
+    text-decoration: none;
+    color: snow;
+    font-size: 25px;
+    transition: 0.8s;
+}
+
+.header a:hover{
+    text-decoration: underline;
+    scale: 1.05;
+    transition: 1s;
+}
+
+.header a[class='active']{
+    color: black;
+}
